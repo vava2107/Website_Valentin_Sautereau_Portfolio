@@ -65,12 +65,11 @@
                 <h2 class="section-title">Présentation <span>Personnelle</span></h2>
                 <div class="about-flex">
                     <div class="about-main">
-                        <p>Futur ingénieur diplômé de l'<strong>ENSEIRB-MATMECA</strong>, je me spécialise dans la
-                            conception et l'intégration de systèmes embarqués complexes.</p>
-                        <p>Mon parcours combine une solide expertise en <strong>électronique</strong> (conception PCB,
-                            routage KiCAD), <strong>programmation</strong> (C/C++, VHDL) et <strong>mécanique</strong>
-                            (modélisation 3D), le tout appliqué à des domaines exigeants comme les drones et les bancs
-                            de simulation aéronautique.</p>
+                        <p>Futur ingénieur diplômé de l'<strong>ENSEIRB-MATMECA</strong> avec 5 ans d'expérience (Thales, Auckland Bioengineering Institute), je me spécialise dans la conception de démonstrateurs et l'intégration de systèmes embarqués complexes.</p>
+                        <p>Mon parcours combine une solide expertise en <strong>électronique</strong> (conception PCB, routage KiCAD,
+                            asservissement), <strong>programmation</strong> (C/C++, Python, LabVIEW) et <strong>mécanique</strong>
+                            (modélisation Fusion 360, impression 3D). Alliant vision système et prototypage rapide, je m'investis pleinement 
+                            dans la réussite de projets techniques ambitieux, de la conception matérielle à la validation opérationnelle.</p>
                     </div>
                     <div class="about-sidebar">
                         <div class="sidebar-item">
@@ -137,9 +136,10 @@
                             <h3>Ingénieur Intégrateur Systèmes Drone (Alternance)</h3>
                             <p class="company">THALES Mérignac | 2023 - 2026</p>
                             <ul>
-                                <li>Intégration électronique/logiciel/mécanique sur porteurs drones.</li>
-                                <li>Préparation et analyse de plans de vol et données d'essais.</li>
-                                <li>Développement de fonctions sur banc de simulation temps réel.</li>
+                                <li>Conception d'un démonstrateur Hardware-in-the-Loop (HIL) pour validation optronique.</li>
+                                <li>Architecture hard/soft : intégration Teensy 4.1, asservissement PID et moteur pas-à-pas.</li>
+                                <li>Développement C/C++ : plugins simulateur VBS4 et routage télémétrie temps réel.</li>
+                                <li>Exploitation flux réseaux (MAVLink, UDP Multicast) pour essais systèmes (IVV).</li>
                             </ul>
                         </div>
                     </div>
@@ -149,9 +149,9 @@
                             <h3>Stage Recherche & Développement</h3>
                             <p class="company">Auckland Bioengineering Institute (Nouvelle-Zélande) | Été 2024</p>
                             <ul>
-                                <li>Modification/intégration de cartes de contrôle de pompes piézoélectriques.</li>
+                                <li>Modification et intégration de cartes de contrôle de pompes.</li>
                                 <li>Conception et routage PCB sous KiCAD.</li>
-                                <li>Programmation FPGA via LabVIEW.</li>
+                                <li>Programmation LabVIEW sur FPGA (pilotage pompes piézoélectriques).</li>
                             </ul>
                         </div>
                     </div>
@@ -161,8 +161,9 @@
                             <h3>Technicien Électronique au FABLAB (Alternance)</h3>
                             <p class="company">THALES Mérignac | 2021 - 2023</p>
                             <ul>
-                                <li>Prototypage et maquettage électronique rapide.</li>
-                                <li>Conception et impression 3D industrielle.</li>
+                                <li>Maquettage et prototypage électronique rapide.</li>
+                                <li>Modélisation, conception et impression 3D.</li>
+                                <li>Programmation bas niveau.</li>
                             </ul>
                         </div>
                     </div>
@@ -174,6 +175,12 @@
         <section id="projects" class="container reveal">
             <h2 class="section-title">Mes <span>Projets</span></h2>
             <div class="projects-grid">
+                <div class="project-box">
+                    <i data-lucide="plane"></i>
+                    <h3>Banc HIL Drone & Optronique</h3>
+                    <p>Création d'un démonstrateur Hardware-in-the-Loop (simulateur tactique VBS4, support motorisé asservi et calcul fauchée via SDL2).</p>
+                    <div class="p-tags"><span>C/C++</span><span>Teensy 4.1</span><span>MAVLink</span><span>SDL2</span></div>
+                </div>
                 <div class="project-box">
                     <i data-lucide="radio"></i>
                     <h3>Traitement Radar (FFT)</h3>
