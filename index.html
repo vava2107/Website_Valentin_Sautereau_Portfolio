@@ -24,8 +24,16 @@
                 <li><a href="#about">Bio</a></li>
                 <li><a href="#academic">Formation</a></li>
                 <li><a href="#experience">Expérience</a></li>
+                <li><a href="#skills">Compétences</a></li>
                 <li><a href="#projects">Projets</a></li>
                 <li><a href="#interests">Intérêts</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-docs-toggle"><i data-lucide="download"></i> Documents</a>
+                    <div class="nav-dropdown-menu">
+                        <a href="CV_Valentin_Sautereau.pdf" download><i data-lucide="file-text"></i> CV</a>
+                        <a href="Dossier-de-competences-Valentin-Sautereau.pdf" download><i data-lucide="award"></i> Dossier de compétences</a>
+                    </div>
+                </li>
                 <li><a href="#contact" class="btn-primary-v3">Me contacter</a></li>
             </ul>
         </nav>
@@ -41,9 +49,13 @@
                     <p class="hero-desc">Apprenti Ingénieur @ <strong>THALES Mérignac</strong>. Passionné par
                         l'intégration drone, l'électronique de pointe et les systèmes critiques.</p>
                     <div class="hero-actions">
-                        <a href="#experience" class="btn-primary-v3">Découvrir mon parcours</a>
+                        <a href="CV_Valentin_Sautereau.pdf" download class="btn-primary-v3"><i data-lucide="download"></i> Télécharger mon CV</a>
+                        <a href="Dossier-de-competences-Valentin-Sautereau.pdf" download class="btn-outline"><i data-lucide="download"></i> Dossier de compétences</a>
+                    </div>
+                    <div class="hero-actions hero-actions-secondary">
+                        <a href="#experience" class="link-underline">Découvrir mon parcours</a>
                         <a href="https://www.linkedin.com/in/valentin-sautereau/" target="_blank"
-                            class="btn-outline">LinkedIn</a>
+                            class="link-underline">LinkedIn</a>
                     </div>
                 </div>
                 <div class="hero-visual">
@@ -81,8 +93,20 @@
                             <span>06 72 40 26 34</span>
                         </div>
                         <div class="sidebar-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>Mérignac, 33700</span>
+                        </div>
+                        <div class="sidebar-item">
+                            <i data-lucide="car"></i>
+                            <span>Permis B (véhiculé)</span>
+                        </div>
+                        <div class="sidebar-item">
                             <i data-lucide="award"></i>
-                            <span>Niveau B2 (TOEIC: 840)</span>
+                            <span>Anglais B2 (TOEIC: 840)</span>
+                        </div>
+                        <div class="sidebar-item sidebar-docs">
+                            <a href="CV_Valentin_Sautereau.pdf" download><i data-lucide="file-down"></i> Télécharger le CV</a>
+                            <a href="Dossier-de-competences-Valentin-Sautereau.pdf" download><i data-lucide="file-down"></i> Télécharger le dossier de compétences</a>
                         </div>
                     </div>
                 </div>
@@ -171,6 +195,52 @@
             </div>
         </section>
 
+        <!-- Skills (from Dossier de compétences) -->
+        <section id="skills" class="section-alt">
+            <div class="container reveal">
+                <h2 class="section-title">Compétences <span>Techniques</span></h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i data-lucide="code-2"></i>
+                        <h3>Programmation / Logiciel Embarqué</h3>
+                        <ul>
+                            <li><strong>Langages :</strong> C, C++, VHDL, Python. Développement de prototypes de logiciels embarqués et temps réel.</li>
+                            <li><strong>Réseaux :</strong> Flux temps réel, UDP Multicast, bus EBUS, MAVLink.</li>
+                            <li><strong>Simulation & Optronique :</strong> Conduite du projet VBS4 (plugin C++), synchronisation dynamique position/vue, extraction et traitement simultané de flux vidéo Infrarouge (IR) et Visible/Jour.</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <i data-lucide="zap"></i>
+                        <h3>Électronique Analogique et Numérique</h3>
+                        <ul>
+                            <li><strong>Hardware :</strong> Spécification systèmes, routage (KiCAD, Eagle, Isis Proteus, Ares).</li>
+                            <li><strong>Prototypage :</strong> Fabrication de cartes électroniques / utilisation de CNC pour la gravure et découpe. Soudure CMS et composants traversants.</li>
+                            <li><strong>Test/Validation :</strong> Réalisation d'essais systèmes, analyse et recherche de pannes sur cartes (oscilloscope, multimètre).</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <i data-lucide="settings"></i>
+                        <h3>Mécanique & Démonstrateurs</h3>
+                        <ul>
+                            <li><strong>Système :</strong> Conception et développement d'un démonstrateur technologique. Support motorisé pour tourelle optronique sur banc, alliant développement logiciel, électronique et mécanique.</li>
+                            <li><strong>CAO 3D :</strong> Modélisation sur mesure (Fusion360, Onshape, Rhinocéros).</li>
+                            <li><strong>Fabrication :</strong> Usinage CNC et impression 3D pour prototypage rapide.</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <i data-lucide="users"></i>
+                        <h3>Aptitudes Professionnelles</h3>
+                        <ul>
+                            <li>Autonomie et rigueur</li>
+                            <li>Esprit d'équipe et collaboration</li>
+                            <li>Coordination de projets</li>
+                            <li>Esprit d'initiative</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Projects (Merged Depth) -->
         <section id="projects" class="container reveal">
             <h2 class="section-title">Mes <span>Projets</span></h2>
@@ -225,10 +295,10 @@
             <div class="container reveal">
                 <h2 class="section-title">Centres <span>d'intérêt</span></h2>
                 <div class="interests-flex">
-                    <div class="interest-pill"><i data-lucide="trophy"></i> Sport (Badminton, Running, Ski)</div>
-                    <div class="interest-pill"><i data-lucide="plane"></i> Voyages (NZ, Maroc)</div>
-                    <div class="interest-pill"><i data-lucide="hammer"></i> Rénovation / Bricolage</div>
-                    <div class="interest-pill"><i data-lucide="cpu"></i> Tech & Drones</div>
+                    <div class="interest-pill"><i data-lucide="trophy"></i> Sport (Badminton, course à pied, rando, ski, kick-boxing, foot)</div>
+                    <div class="interest-pill"><i data-lucide="cpu"></i> Nouvelles technologies</div>
+                    <div class="interest-pill"><i data-lucide="hammer"></i> Bricolage (rénovation, véhicule aménagé, travail du bois)</div>
+                    <div class="interest-pill"><i data-lucide="plane"></i> Voyages (Maroc, Nouvelle-Zélande)</div>
                 </div>
             </div>
         </section>
@@ -240,6 +310,10 @@
                 <div class="c-links">
                     <a href="mailto:valsaut2107@gmail.com" class="btn-primary-v3">M'envoyer un email</a>
                     <p class="c-phone">06 72 40 26 34</p>
+                </div>
+                <div class="c-docs">
+                    <a href="CV_Valentin_Sautereau.pdf" download class="btn-outline"><i data-lucide="download"></i> Télécharger mon CV</a>
+                    <a href="Dossier-de-competences-Valentin-Sautereau.pdf" download class="btn-outline"><i data-lucide="download"></i> Télécharger mon dossier de compétences</a>
                 </div>
             </div>
         </section>
