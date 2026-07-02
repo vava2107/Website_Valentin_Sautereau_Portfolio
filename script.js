@@ -1,4 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // 0. Mobile / compact nav toggle (burger menu)
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('active');
+            navToggle.classList.toggle('active', isOpen);
+            navToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+        // Ferme le menu quand on clique sur un lien (sauf le sous-menu Documents)
+        navLinks.querySelectorAll('a').forEach((link) => {
+            if (link.classList.contains('nav-docs-toggle')) return;
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                navToggle.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
+
+    // Sous-menu "Documents" : au clic (utile en menu burger, où il n'y a pas de survol)
+    document.querySelectorAll('.nav-docs-toggle').forEach((toggle) => {
+        toggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            const parent = toggle.closest('.nav-dropdown');
+            if (parent) parent.classList.toggle('active');
+        });
+    });
+
     // 1. Header scroll effect
     const header = document.querySelector('header');
     window.addEventListener('scroll', () => {
