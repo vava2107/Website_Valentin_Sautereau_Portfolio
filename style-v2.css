@@ -36,9 +36,23 @@ header.scrolled {
 nav { display: flex; justify-content: space-between; align-items: center; }
 .logo { font-family: 'Montserrat'; font-weight: 900; font-size: 1.5rem; color: var(--text-high); }
 .logo span { color: var(--primary); }
+.nav-right { display: flex; align-items: center; gap: 2rem; }
 .nav-links { display: flex; list-style: none; gap: 2.5rem; align-items: center; }
 .nav-links a { text-decoration: none; color: var(--text-mid); font-weight: 500; transition: var(--transition); }
 .nav-links a:hover { color: var(--primary); }
+
+/* --- Language Switch --- */
+.lang-switch {
+    display: flex; align-items: center; background: var(--bg-alt);
+    border: 1px solid var(--border); border-radius: 50px; padding: 0.25rem;
+}
+.lang-btn {
+    background: transparent; border: none; color: var(--text-mid); cursor: pointer;
+    font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.8rem;
+    padding: 0.4rem 0.8rem; border-radius: 50px; transition: var(--transition);
+}
+.lang-btn:hover { color: var(--text-high); }
+.lang-btn.active { background: var(--primary); color: #0f172a; }
 
 /* --- Nav Documents Dropdown --- */
 .nav-dropdown { position: relative; }
