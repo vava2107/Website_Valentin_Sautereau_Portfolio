@@ -21,6 +21,7 @@ body {
 }
 
 .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+header .container { max-width: 1700px; }
 
 /* --- Header --- */
 header {
@@ -33,14 +34,34 @@ header.scrolled {
     border-bottom: 1px solid var(--border);
     padding: 1rem 0;
 }
-nav { display: flex; justify-content: space-between; align-items: center; position: relative; gap: 1.5rem; }
+nav { display: flex; justify-content: space-between; align-items: center; position: relative; gap: 1rem; }
 .logo { font-family: 'Montserrat'; font-weight: 900; font-size: 1.5rem; color: var(--text-high); flex-shrink: 0; white-space: nowrap; }
 .logo span { color: var(--primary); }
-.nav-right { display: flex; align-items: center; gap: 1.5rem; }
-.nav-links { display: flex; list-style: none; gap: 1.8rem; align-items: center; }
+.nav-right { display: flex; align-items: center; gap: 1.25rem; }
 .nav-links a { text-decoration: none; color: var(--text-mid); font-weight: 500; transition: var(--transition); white-space: nowrap; }
 .nav-links a:hover { color: var(--primary); }
 .nav-links .btn-primary-v3 { white-space: nowrap; }
+
+/* Nav-links : en mode "burger" par défaut (mobile-first). Le mode ligne
+   horizontale n'est activé qu'à partir d'un écran large (voir min-width: 1600px
+   plus bas), pour ne JAMAIS risquer un débordement du header sur laptop/tablette. */
+.nav-links {
+    display: none; list-style: none; flex-direction: column; align-items: flex-start; gap: 1rem;
+    position: absolute; top: 100%; left: 0; right: 0; margin-top: 1px;
+    background: var(--bg-alt); border: 1px solid var(--border); border-top: none;
+    border-radius: 0 0 16px 16px; padding: 1.5rem 2rem 2rem;
+    box-shadow: 0 30px 40px rgba(0,0,0,0.4);
+}
+.nav-links.active { display: flex; }
+.nav-links .btn-primary-v3 { margin-top: 0.5rem; }
+.nav-dropdown { position: relative; width: 100%; }
+.nav-dropdown-menu {
+    position: static; transform: none; opacity: 1; visibility: visible;
+    display: none; box-shadow: none; margin-top: 0.6rem; min-width: 0; width: 100%;
+    border-color: var(--border);
+}
+.nav-dropdown.active .nav-dropdown-menu { display: flex; }
+.nav-toggle { display: flex; }
 
 /* --- Language Switch --- */
 .lang-switch {
@@ -56,26 +77,23 @@ nav { display: flex; justify-content: space-between; align-items: center; positi
 .lang-btn:hover { color: var(--text-high); }
 .lang-btn.active { background: var(--primary); color: #0f172a; }
 
-/* --- Nav Toggle (burger, hidden on wide desktop) --- */
+/* --- Nav Toggle (burger). Visible par défaut (mobile-first) ; masqué
+   uniquement sur très grands écrans via le média query min-width: 1600px. --- */
 .nav-toggle {
-    display: none; background: transparent; border: 1px solid var(--border); border-radius: 8px;
+    background: transparent; border: 1px solid var(--border); border-radius: 8px;
     color: var(--text-high); cursor: pointer; padding: 0.5rem; align-items: center; justify-content: center;
     flex-shrink: 0;
 }
 .nav-toggle i { width: 22px; height: 22px; }
 .nav-toggle:hover { border-color: var(--primary); color: var(--primary); }
 
-/* --- Nav Documents Dropdown --- */
-.nav-dropdown { position: relative; }
+/* --- Nav Documents Dropdown (styles communs aux deux modes) --- */
 .nav-docs-toggle { display: flex; align-items: center; gap: 0.4rem; cursor: pointer; }
 .nav-docs-toggle i { width: 16px; height: 16px; }
 .nav-dropdown-menu {
-    position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(10px);
     background: var(--bg-alt); border: 1px solid var(--border); border-radius: 12px;
-    padding: 0.6rem; display: flex; flex-direction: column; gap: 0.3rem; min-width: 240px;
-    opacity: 0; visibility: hidden; transition: var(--transition); box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    padding: 0.6rem; flex-direction: column; gap: 0.3rem; transition: var(--transition);
 }
-.nav-dropdown:hover .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
 .nav-dropdown-menu a {
     display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 0.8rem; border-radius: 8px;
     color: var(--text-high) !important; font-size: 0.9rem; white-space: nowrap;
@@ -234,35 +252,46 @@ footer { padding: 4rem 0; border-top: 1px solid var(--border); text-align: cente
 
 /* --- Responsive --- */
 
-/* Below this width, the full nav-links row no longer fits next to the logo,
-   lang switch and burger button, so it collapses into a dropdown panel. */
-@media (max-width: 1150px) {
+/* Mode nav "ligne horizontale" : réservé aux écrans vraiment larges (desktop /
+   grand écran externe, ex. moniteur 1920px). Sous ce seuil (donc quasiment
+   tous les laptops : 1366, 1440, 1536, 1600...), le menu burger défini plus
+   haut reste actif par défaut. Marge volontairement large pour ne jamais
+   faire déborder le header, quels que soient le zoom, la mise à l'échelle
+   du système ou le rendu exact des polices selon l'appareil. */
+@media (min-width: 1600px) {
     .nav-links {
-        display: none; flex-direction: column; align-items: flex-start; gap: 1rem;
-        position: absolute; top: 100%; left: 0; right: 0; margin-top: 1px;
-        background: var(--bg-alt); border: 1px solid var(--border); border-top: none;
-        border-radius: 0 0 16px 16px; padding: 1.5rem 2rem 2rem;
-        box-shadow: 0 30px 40px rgba(0,0,0,0.4);
+        display: flex; flex-direction: row; align-items: center; gap: 1.6rem;
+        position: static; background: none; border: none; box-shadow: none;
+        padding: 0; margin-top: 0; border-radius: 0;
     }
-    .nav-links.active { display: flex; }
-    .nav-links .btn-primary-v3 { margin-top: 0.5rem; }
-    .nav-dropdown { width: 100%; }
+    .nav-links .btn-primary-v3 { margin-top: 0; }
+    .nav-dropdown { width: auto; }
     .nav-dropdown-menu {
-        position: static; transform: none; opacity: 1; visibility: visible;
-        display: none; box-shadow: none; margin-top: 0.6rem; min-width: 0; width: 100%;
-        border-color: var(--border);
+        display: flex; position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(10px);
+        opacity: 0; visibility: hidden; min-width: 240px; box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     }
     .nav-dropdown:hover .nav-dropdown-menu,
-    .nav-dropdown.active .nav-dropdown-menu { display: flex; }
-    .nav-toggle { display: flex; }
+    .nav-dropdown.active .nav-dropdown-menu {
+        display: flex; opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0);
+    }
+    .nav-toggle { display: none; }
 }
 
 @media (max-width: 992px) {
     h1 { font-size: 3.5rem; }
     .hero-grid { grid-template-columns: 1fr; text-align: center; }
     .hero-actions { justify-content: center; }
-    .hero-visual { justify-content: center; margin-top: 3rem; }
+    .hero-visual { flex-direction: column; align-items: center; justify-content: center; margin-top: 3rem; }
     .about-flex { grid-template-columns: 1fr; }
+
+    /* Les badges flottants sont positionnés en absolu par rapport à la photo
+       (calibré pour le layout desktop). En layout empilé (mobile/tablette),
+       on repasse en flux normal, centré sous la photo, pour ne jamais déborder. */
+    .tech-stack-floating {
+        position: static; top: auto; right: auto; transform: none;
+        flex-direction: row; flex-wrap: wrap; justify-content: center;
+        margin-top: 1.5rem; max-width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
