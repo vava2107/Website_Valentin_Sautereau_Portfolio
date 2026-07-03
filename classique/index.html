@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Valentin Sautereau | Ingénieur Système Embarqué</title>
+    <meta id="page-description" name="description"
+        content="Portfolio d'ingénieur en systèmes électroniques embarqués - Alternance Thales Mérignac">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style-v2.css">
+</head>
+
+<body class="dark-theme">
+    <header id="header">
+        <nav class="container">
+            <div class="logo">Valentin<span>.S</span></div>
+            <div class="nav-right">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#about" data-i18n="nav.bio">Bio</a></li>
+                    <li><a href="#academic" data-i18n="nav.academic">Formation</a></li>
+                    <li><a href="#experience" data-i18n="nav.experience">Expérience</a></li>
+                    <li><a href="#skills" data-i18n="nav.skills">Compétences</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+                    <li><a href="#interests" data-i18n="nav.interests">Intérêts</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-docs-toggle"><i data-lucide="download"></i> <span data-i18n="nav.documents">Documents</span></a>
+                        <div class="nav-dropdown-menu">
+                            <a href="../CV_Valentin_Sautereau.pdf" download><i data-lucide="file-text"></i> <span data-i18n="nav.cv">CV</span></a>
+                            <a href="../Dossier-de-competences-Valentin-Sautereau.pdf" download><i data-lucide="award"></i> <span data-i18n="nav.dossier">Dossier de compétences</span></a>
+                        </div>
+                    </li>
+                    <li><a href="#contact" class="btn-primary-v3" data-i18n="nav.contact">Me contacter</a></li>
+                </ul>
+                <div class="lang-switch" role="group" aria-label="Language switch">
+                    <button type="button" class="lang-btn active" data-lang="fr">FR</button>
+                    <button type="button" class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <button type="button" class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <span class="badge" data-i18n="hero.badge">Ingénieur Systèmes Électroniques Embarqués</span>
+                    <h1>Valentin<br><span>Sautereau</span></h1>
+                    <p class="hero-desc" data-i18n="hero.desc">Apprenti Ingénieur @ <strong>THALES Mérignac</strong>. Passionné par
+                        l'intégration drone, l'électronique de pointe et les systèmes critiques.</p>
+                    <div class="hero-actions">
+                        <a href="../CV_Valentin_Sautereau.pdf" download class="btn-primary-v3"><i data-lucide="download"></i> <span data-i18n="hero.dlCv">Télécharger mon CV</span></a>
+                        <a href="../Dossier-de-competences-Valentin-Sautereau.pdf" download class="btn-outline"><i data-lucide="download"></i> <span data-i18n="hero.dlDossier">Dossier de compétences</span></a>
+                    </div>
+                    <div class="hero-actions hero-actions-secondary">
+                        <a href="#experience" class="link-underline" data-i18n="hero.discover">Découvrir mon parcours</a>
+                        <a href="https://www.linkedin.com/in/valentin-sautereau/" target="_blank"
+                            class="link-underline">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="photo-frame">
+                        <img src="../Photo_CV.png" alt="Valentin Sautereau">
+                    </div>
+                    <div class="tech-stack-floating">
+                        <span>C/C++/Python</span>
+                        <span data-i18n="hero.tag2">Intégration Hard/Soft</span>
+                        <span data-i18n="hero.tag3">Simulation temps réel</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Presentation -->
+        <section id="about" class="section-alt">
+            <div class="container reveal">
+                <h2 class="section-title" data-i18n="about.title">Présentation <span>Personnelle</span></h2>
+                <div class="about-flex">
+                    <div class="about-main">
+                        <p data-i18n="about.p1">Futur ingénieur diplômé de l'<strong>ENSEIRB-MATMECA</strong> avec 5 ans d'expérience (Thales, Auckland Bioengineering Institute), je me spécialise dans la conception de démonstrateurs et l'intégration de systèmes embarqués complexes.</p>
+                        <p data-i18n="about.p2">Mon parcours combine une solide expertise en <strong>électronique</strong> (conception PCB, routage KiCAD,
+                            asservissement), <strong>programmation</strong> (C/C++, Python, LabVIEW) et <strong>mécanique</strong>
+                            (modélisation Fusion 360, impression 3D). Alliant vision système et prototypage rapide, je m'investis pleinement
+                            dans la réussite de projets techniques ambitieux, de la conception matérielle à la validation opérationnelle.</p>
+                    </div>
+                    <div class="about-sidebar">
+                        <div class="sidebar-item">
+                            <i data-lucide="mail"></i>
+                            <span>valsaut2107@gmail.com</span>
+                        </div>
+                        <div class="sidebar-item">
+                            <i data-lucide="phone"></i>
+                            <span>06 72 40 26 34</span>
+                        </div>
+                        <div class="sidebar-item">
+                            <i data-lucide="map-pin"></i>
+                            <span data-i18n="about.location">Mérignac, 33700</span>
+                        </div>
+                        <div class="sidebar-item">
+                            <i data-lucide="car"></i>
+                            <span data-i18n="about.license">Permis B (véhiculé)</span>
+                        </div>
+                        <div class="sidebar-item">
+                            <i data-lucide="award"></i>
+                            <span data-i18n="about.english">Anglais B2 (TOEIC: 840)</span>
+                        </div>
+                        <div class="sidebar-item sidebar-docs">
+                            <a href="../CV_Valentin_Sautereau.pdf" download><i data-lucide="file-down"></i> <span data-i18n="about.dlCv">Télécharger le CV</span></a>
+                            <a href="../Dossier-de-competences-Valentin-Sautereau.pdf" download><i data-lucide="file-down"></i> <span data-i18n="about.dlDossier">Télécharger le dossier de compétences</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic (Merged Depth) -->
+        <section id="academic" class="container reveal">
+            <h2 class="section-title" data-i18n="academic.title">Parcours <span>Académique</span></h2>
+            <div class="academic-list">
+                <div class="card card-academic">
+                    <div class="card-header">
+                        <div class="year">2023 - 2026</div>
+                        <h3 data-i18n="academic.d1.h">Ingénieur Systèmes Électroniques Embarqués (SEE)</h3>
+                        <p class="institution">ENSEIRB-MATMECA | Bordeaux INP</p>
+                    </div>
+                    <div class="card-content">
+                        <p data-i18n="academic.d1.p">Formation d'ingénieur spécialisée dans le hardware et le software embarqué.</p>
+                        <div class="course-tags" data-i18n="academic.d1.tags">
+                            <span>Traitement du Signal</span><span>Systèmes Embarqués & RTOS</span><span>Architecture
+                                Processeurs</span><span>Robotique & ROS</span><span>VHDL / FPGA</span><span>IA &
+                                GPU</span><span>Protocoles Réseaux</span><span>Micro-électronique</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-academic">
+                    <div class="card-header">
+                        <div class="year">2020 - 2023</div>
+                        <h3 data-i18n="academic.d2.h">DUT GEII (Génie Électrique et Informatique Industrielle)</h3>
+                        <p class="institution">IUT de Gradignan</p>
+                    </div>
+                    <div class="card-content">
+                        <p data-i18n="academic.d2.p">Formation technique pluridisciplinaire en électronique et automatique.</p>
+                        <div class="course-tags" data-i18n="academic.d2.tags">
+                            <span>Électronique Analogique</span><span>Automatique & Régulation</span><span>Programmation
+                                C/Python</span><span>Électrotechnique</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience (Specific to Valentin) -->
+        <section id="experience" class="section-alt">
+            <div class="container reveal">
+                <h2 class="section-title" data-i18n="experience.title">Expérience <span>Professionnelle</span></h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="time-dot"></div>
+                        <div class="time-content">
+                            <h3 data-i18n="experience.e1.h">Ingénieur Intégrateur Systèmes Drone (Alternance)</h3>
+                            <p class="company" data-i18n="experience.e1.company">THALES Mérignac | 2023 - 2026</p>
+                            <ul data-i18n="experience.e1.list">
+                                <li>Conception d'un démonstrateur Hardware-in-the-Loop (HIL) pour validation optronique.</li>
+                                <li>Architecture hard/soft : intégration Teensy 4.1, asservissement PID et moteur pas-à-pas.</li>
+                                <li>Développement C/C++ : plugins simulateur VBS4 et routage télémétrie temps réel.</li>
+                                <li>Exploitation flux réseaux (MAVLink, UDP Multicast) pour essais systèmes (IVV).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time-dot"></div>
+                        <div class="time-content">
+                            <h3 data-i18n="experience.e2.h">Stage Recherche & Développement</h3>
+                            <p class="company" data-i18n="experience.e2.company">Auckland Bioengineering Institute (Nouvelle-Zélande) | Été 2024</p>
+                            <ul data-i18n="experience.e2.list">
+                                <li>Modification et intégration de cartes de contrôle de pompes.</li>
+                                <li>Conception et routage PCB sous KiCAD.</li>
+                                <li>Programmation LabVIEW sur FPGA (pilotage pompes piézoélectriques).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time-dot"></div>
+                        <div class="time-content">
+                            <h3 data-i18n="experience.e3.h">Technicien Électronique au FABLAB (Alternance)</h3>
+                            <p class="company" data-i18n="experience.e3.company">THALES Mérignac | 2021 - 2023</p>
+                            <ul data-i18n="experience.e3.list">
+                                <li>Maquettage et prototypage électronique rapide.</li>
+                                <li>Modélisation, conception et impression 3D.</li>
+                                <li>Programmation bas niveau.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills (from Dossier de compétences) -->
+        <section id="skills" class="section-alt">
+            <div class="container reveal">
+                <h2 class="section-title" data-i18n="skills.title">Compétences <span>Techniques</span></h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i data-lucide="code-2"></i>
+                        <h3 data-i18n="skills.s1.h">Programmation / Logiciel Embarqué</h3>
+                        <ul data-i18n="skills.s1.list">
+                            <li><strong>Langages :</strong> C, C++, VHDL, Python. Développement de prototypes de logiciels embarqués et temps réel.</li>
+                            <li><strong>Réseaux :</strong> Flux temps réel, UDP Multicast, bus EBUS, MAVLink.</li>
+                            <li><strong>Simulation & Optronique :</strong> Conduite du projet VBS4 (plugin C++), synchronisation dynamique position/vue, extraction et traitement simultané de flux vidéo Infrarouge (IR) et Visible/Jour.</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <i data-lucide="zap"></i>
+                        <h3 data-i18n="skills.s2.h">Électronique Analogique et Numérique</h3>
+                        <ul data-i18n="skills.s2.list">
+                            <li><strong>Hardware :</strong> Spécification systèmes, routage (KiCAD, Eagle, Isis Proteus, Ares).</li>
+                            <li><strong>Prototypage :</strong> Fabrication de cartes électroniques / utilisation de CNC pour la gravure et découpe. Soudure CMS et composants traversants.</li>
+                            <li><strong>Test/Validation :</strong> Réalisation d'essais systèmes, analyse et recherche de pannes sur cartes (oscilloscope, multimètre).</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <i data-lucide="settings"></i>
+                        <h3 data-i18n="skills.s3.h">Mécanique & Démonstrateurs</h3>
+                        <ul data-i18n="skills.s3.list">
+                            <li><strong>Système :</strong> Conception et développement d'un démonstrateur technologique. Support motorisé pour tourelle optronique sur banc, alliant développement logiciel, électronique et mécanique.</li>
+                            <li><strong>CAO 3D :</strong> Modélisation sur mesure (Fusion360, Onshape, Rhinocéros).</li>
+                            <li><strong>Fabrication :</strong> Usinage CNC et impression 3D pour prototypage rapide.</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <i data-lucide="users"></i>
+                        <h3 data-i18n="skills.s4.h">Aptitudes Professionnelles</h3>
+                        <ul data-i18n="skills.s4.list">
+                            <li>Autonomie et rigueur</li>
+                            <li>Esprit d'équipe et collaboration</li>
+                            <li>Coordination de projets</li>
+                            <li>Esprit d'initiative</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects (Merged Depth) -->
+        <section id="projects" class="container reveal">
+            <h2 class="section-title" data-i18n="projects.title">Mes <span>Projets</span></h2>
+            <div class="projects-grid">
+                <div class="project-box">
+                    <i data-lucide="plane"></i>
+                    <h3 data-i18n="projects.p1.h">Banc HIL Drone & Optronique</h3>
+                    <p data-i18n="projects.p1.p">Création d'un démonstrateur Hardware-in-the-Loop (simulateur tactique VBS4, support motorisé asservi et calcul fauchée via SDL2).</p>
+                    <div class="p-tags"><span>C/C++</span><span>Teensy 4.1</span><span>MAVLink</span><span>SDL2</span></div>
+                </div>
+                <div class="project-box">
+                    <i data-lucide="radio"></i>
+                    <h3 data-i18n="projects.p2.h">Traitement Radar (FFT)</h3>
+                    <p data-i18n="projects.p2.p">Déploiement de calculs FFT sur AI Engines FPGA (AMD Versal) via MATLAB/Simulink.</p>
+                    <div class="p-tags"><span>VHDL</span><span>Vivado</span><span>MATLAB</span></div>
+                </div>
+                <div class="project-box">
+                    <i data-lucide="box"></i>
+                    <h3 data-i18n="projects.p3.h">Robotique XARM6</h3>
+                    <p data-i18n="projects.p3.p">Développement ROS pour la détection et saisie de pièces avec bras 6 axes et Realsense.</p>
+                    <div class="p-tags"><span>ROS</span><span>C++</span><span>OpenCV</span></div>
+                </div>
+                <div class="project-box">
+                    <i data-lucide="cpu"></i>
+                    <h3 data-i18n="projects.p4.h">Design Processeur VHDL</h3>
+                    <p data-i18n="projects.p4.p">Architecture complète d'un processeur (ALU, registres, unité de contrôle).</p>
+                    <div class="p-tags"><span>VHDL</span><span>Architecture</span></div>
+                </div>
+                <div class="project-box">
+                    <i data-lucide="activity"></i>
+                    <h3 data-i18n="projects.p5.h">Simulation Radio RF</h3>
+                    <p data-i18n="projects.p5.p">Modélisation de chaînes GSM/QPSK sous ADS (amplification, filtrage).</p>
+                    <div class="p-tags"><span>ADS</span><span>Modulation</span></div>
+                </div>
+                <div class="project-box">
+                    <i data-lucide="database"></i>
+                    <h3 data-i18n="projects.p6.h">Médiathèque C++</h3>
+                    <p data-i18n="projects.p6.p">Gestion multi-utilisateurs avec polymorphisme et persistance des données.</p>
+                    <div class="p-tags"><span>C++</span><span>STL</span></div>
+                </div>
+                <div class="project-box">
+                    <i data-lucide="message-circle"></i>
+                    <h3 data-i18n="projects.p7.h">Chat UNIX en C</h3>
+                    <p data-i18n="projects.p7.p">Système client/serveur via tubes (pipes) et signaux UNIX.</p>
+                    <div class="p-tags"><span>C</span><span>UNIX API</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests -->
+        <section id="interests" class="section-alt">
+            <div class="container reveal">
+                <h2 class="section-title" data-i18n="interests.title">Centres <span>d'intérêt</span></h2>
+                <div class="interests-flex">
+                    <div class="interest-pill"><i data-lucide="trophy"></i> <span data-i18n="interests.i1">Sport (Badminton, course à pied, rando, ski, kick-boxing, foot)</span></div>
+                    <div class="interest-pill"><i data-lucide="cpu"></i> <span data-i18n="interests.i2">Nouvelles technologies</span></div>
+                    <div class="interest-pill"><i data-lucide="hammer"></i> <span data-i18n="interests.i3">Bricolage (rénovation, véhicule aménagé, travail du bois)</span></div>
+                    <div class="interest-pill"><i data-lucide="plane"></i> <span data-i18n="interests.i4">Voyages (Maroc, Nouvelle-Zélande)</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact (Fixed) -->
+        <section id="contact" class="container reveal">
+            <div class="contact-card">
+                <h2 data-i18n="contact.title">On collabore ?</h2>
+                <div class="c-links">
+                    <a href="mailto:valsaut2107@gmail.com" class="btn-primary-v3" data-i18n="contact.email">M'envoyer un email</a>
+                    <p class="c-phone">06 72 40 26 34</p>
+                </div>
+                <div class="c-docs">
+                    <a href="../CV_Valentin_Sautereau.pdf" download class="btn-outline"><i data-lucide="download"></i> <span data-i18n="contact.dlCv">Télécharger mon CV</span></a>
+                    <a href="../Dossier-de-competences-Valentin-Sautereau.pdf" download class="btn-outline"><i data-lucide="download"></i> <span data-i18n="contact.dlDossier">Télécharger mon dossier de compétences</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer.text">&copy; 2026 Valentin Sautereau • Ingénieur Systèmes Electroniques Embarqués</p>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
