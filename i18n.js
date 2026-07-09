@@ -18,7 +18,7 @@
             'nav.contact': 'Me contacter',
 
             'hero.badge': 'Ingénieur Systèmes Électroniques Embarqués',
-            'hero.desc': 'Apprenti Ingénieur @ <strong>THALES Mérignac</strong>. Profil polyvalent — électronique, mécanique, logiciel — au service de l\'intégration de systèmes embarqués.',
+            'hero.desc': '<strong>Ingénieur Systèmes Électroniques Embarqués.</strong> Intéressé par l\'intégration drone, l\'électronique embarquée et les systèmes critiques.',
             'hero.dlCv': 'Télécharger mon CV',
             'hero.dlDossier': 'Dossier de compétences',
             'hero.discover': 'Découvrir mon parcours',
@@ -26,8 +26,8 @@
             'hero.tag3': 'Simulation temps réel',
 
             'about.title': 'Présentation <span>Personnelle</span>',
-            'about.p1': 'Futur ingénieur diplômé de l\'<strong>ENSEIRB-MATMECA</strong>, fort de 5 ans d\'expérience (Thales, Auckland Bioengineering Institute), je me spécialise dans l\'intégration de systèmes embarqués complexes, au plus près du matériel.',
-            'about.p2': 'Ingénieur polyvalent, je conçois et j\'intègre des systèmes complets : <strong>électronique</strong> (conception PCB, routage KiCAD, asservissement), <strong>mécanique</strong> (modélisation Fusion 360, impression 3D) et <strong>logiciel embarqué</strong> (C/C++, Python, LabVIEW) pensé comme un outil au service du matériel, jamais une fin en soi. Cette approche transversale, du prototypage à la validation opérationnelle, me permet de m\'adapter à des projets et secteurs variés, toujours au contact direct du système physique.',
+            'about.p1': 'Ingénieur diplômé de l\'<strong>ENSEIRB-MATMECA</strong> en systèmes électroniques embarqués, j\'ai réalisé mes cinq années de formation en alternance chez Thales Mérignac, complétées par un stage de trois mois à l\'Auckland Bioengineering Institute. J\'y ai conçu un banc de simulation Hardware-in-the-Loop pour la validation optronique, en prenant en charge l\'électronique, le logiciel et la mécanique du démonstrateur.',
+            'about.p2': 'Mon parcours m\'a conduit à intervenir sur l\'ensemble de la chaîne technique : <strong>électronique</strong> (conception et routage PCB sous KiCAD, asservissement), <strong>développement embarqué</strong> (C/C++, Python, LabVIEW) et <strong>mécanique</strong> (modélisation Fusion 360, usinage CNC, impression 3D). Je souhaite exercer sur des fonctions transverses, au plus près du système et de son intégration, où la compréhension globale de l\'architecture prime sur la spécialisation dans un seul domaine.',
             'about.location': 'Mérignac, 33700',
             'about.license': 'Permis B (véhiculé)',
             'about.english': 'Anglais B2 (TOEIC: 840)',
@@ -108,7 +108,7 @@
             'nav.contact': 'Contact me',
 
             'hero.badge': 'Embedded Electronic Systems Engineer',
-            'hero.desc': 'Engineering apprentice @ <strong>THALES Mérignac</strong>. A versatile profile — electronics, mechanics, software — in service of embedded systems integration.',
+            'hero.desc': '<strong>Embedded Electronic Systems Engineer.</strong> Interested in drone integration, embedded electronics and critical systems.',
             'hero.dlCv': 'Download my CV',
             'hero.dlDossier': 'Skills portfolio',
             'hero.discover': 'Discover my journey',
@@ -116,8 +116,8 @@
             'hero.tag3': 'Real-time simulation',
 
             'about.title': 'Personal <span>Presentation</span>',
-            'about.p1': 'Soon-to-be graduate engineer from <strong>ENSEIRB-MATMECA</strong>, with 5 years of experience (Thales, Auckland Bioengineering Institute), I specialize in integrating complex embedded systems, working close to the hardware.',
-            'about.p2': 'A versatile engineer, I design and integrate complete systems: <strong>electronics</strong> (PCB design, KiCAD routing, control systems), <strong>mechanics</strong> (Fusion 360 modeling, 3D printing) and <strong>embedded software</strong> (C/C++, Python, LabVIEW) built as a tool in service of the hardware, never an end in itself. This cross-disciplinary approach, from prototyping to operational validation, lets me adapt to a wide range of projects and sectors, always in direct contact with the physical system.',
+            'about.p1': 'Graduate engineer from <strong>ENSEIRB-MATMECA</strong> in embedded electronic systems, I completed my five years of training on a work-study basis at Thales Mérignac, together with a three-month internship at the Auckland Bioengineering Institute. There I designed a Hardware-in-the-Loop simulation bench for optronic validation, taking charge of the electronics, software and mechanics of the demonstrator.',
+            'about.p2': 'My background has led me to work across the whole technical chain: <strong>electronics</strong> (PCB design and routing with KiCAD, control systems), <strong>embedded development</strong> (C/C++, Python, LabVIEW) and <strong>mechanics</strong> (Fusion 360 modeling, CNC machining, 3D printing). I want to work in cross-functional roles, as close as possible to the system and its integration, where an overall understanding of the architecture matters more than specializing in a single field.',
             'about.location': 'Mérignac, France (33700)',
             'about.license': 'Driving licence B (own vehicle)',
             'about.english': 'English B2 (TOEIC: 840)',
