@@ -18,7 +18,7 @@
             'nav.contact': 'Me contacter',
 
             'hero.badge': 'Ingénieur Systèmes Électroniques Embarqués',
-            'hero.desc': 'Apprenti Ingénieur @ <strong>THALES Mérignac</strong>. Passionné par l\'intégration drone, l\'électronique de pointe et les systèmes critiques.',
+            'hero.desc': 'Apprenti Ingénieur @ <strong>THALES Mérignac</strong>. Profil polyvalent — électronique, mécanique, logiciel — au service de l\'intégration de systèmes embarqués.',
             'hero.dlCv': 'Télécharger mon CV',
             'hero.dlDossier': 'Dossier de compétences',
             'hero.discover': 'Découvrir mon parcours',
@@ -26,8 +26,8 @@
             'hero.tag3': 'Simulation temps réel',
 
             'about.title': 'Présentation <span>Personnelle</span>',
-            'about.p1': 'Futur ingénieur diplômé de l\'<strong>ENSEIRB-MATMECA</strong> avec 5 ans d\'expérience (Thales, Auckland Bioengineering Institute), je me spécialise dans la conception de démonstrateurs et l\'intégration de systèmes embarqués complexes.',
-            'about.p2': 'Mon parcours combine une solide expertise en <strong>électronique</strong> (conception PCB, routage KiCAD, asservissement), <strong>programmation</strong> (C/C++, Python, LabVIEW) et <strong>mécanique</strong> (modélisation Fusion 360, impression 3D). Alliant vision système et prototypage rapide, je m\'investis pleinement dans la réussite de projets techniques ambitieux, de la conception matérielle à la validation opérationnelle.',
+            'about.p1': 'Futur ingénieur diplômé de l\'<strong>ENSEIRB-MATMECA</strong>, fort de 5 ans d\'expérience (Thales, Auckland Bioengineering Institute), je me spécialise dans l\'intégration de systèmes embarqués complexes, au plus près du matériel.',
+            'about.p2': 'Ingénieur polyvalent, je conçois et j\'intègre des systèmes complets : <strong>électronique</strong> (conception PCB, routage KiCAD, asservissement), <strong>mécanique</strong> (modélisation Fusion 360, impression 3D) et <strong>logiciel embarqué</strong> (C/C++, Python, LabVIEW) pensé comme un outil au service du matériel, jamais une fin en soi. Cette approche transversale, du prototypage à la validation opérationnelle, me permet de m\'adapter à des projets et secteurs variés, toujours au contact direct du système physique.',
             'about.location': 'Mérignac, 33700',
             'about.license': 'Permis B (véhiculé)',
             'about.english': 'Anglais B2 (TOEIC: 840)',
@@ -108,7 +108,7 @@
             'nav.contact': 'Contact me',
 
             'hero.badge': 'Embedded Electronic Systems Engineer',
-            'hero.desc': 'Engineering apprentice @ <strong>THALES Mérignac</strong>. Passionate about drone integration, cutting-edge electronics and critical systems.',
+            'hero.desc': 'Engineering apprentice @ <strong>THALES Mérignac</strong>. A versatile profile — electronics, mechanics, software — in service of embedded systems integration.',
             'hero.dlCv': 'Download my CV',
             'hero.dlDossier': 'Skills portfolio',
             'hero.discover': 'Discover my journey',
@@ -116,8 +116,8 @@
             'hero.tag3': 'Real-time simulation',
 
             'about.title': 'Personal <span>Presentation</span>',
-            'about.p1': 'Soon-to-be graduate engineer from <strong>ENSEIRB-MATMECA</strong> with 5 years of experience (Thales, Auckland Bioengineering Institute), I specialize in designing demonstrators and integrating complex embedded systems.',
-            'about.p2': 'My background combines strong expertise in <strong>electronics</strong> (PCB design, KiCAD routing, control systems), <strong>programming</strong> (C/C++, Python, LabVIEW) and <strong>mechanics</strong> (Fusion 360 modeling, 3D printing). Combining a systems mindset with rapid prototyping, I\'m fully committed to the success of ambitious technical projects, from hardware design to operational validation.',
+            'about.p1': 'Soon-to-be graduate engineer from <strong>ENSEIRB-MATMECA</strong>, with 5 years of experience (Thales, Auckland Bioengineering Institute), I specialize in integrating complex embedded systems, working close to the hardware.',
+            'about.p2': 'A versatile engineer, I design and integrate complete systems: <strong>electronics</strong> (PCB design, KiCAD routing, control systems), <strong>mechanics</strong> (Fusion 360 modeling, 3D printing) and <strong>embedded software</strong> (C/C++, Python, LabVIEW) built as a tool in service of the hardware, never an end in itself. This cross-disciplinary approach, from prototyping to operational validation, lets me adapt to a wide range of projects and sectors, always in direct contact with the physical system.',
             'about.location': 'Mérignac, France (33700)',
             'about.license': 'Driving licence B (own vehicle)',
             'about.english': 'English B2 (TOEIC: 840)',
